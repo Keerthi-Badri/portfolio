@@ -1,0 +1,121 @@
+.skills {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(124, 58, 237, 0.03) 100%);
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.skill-category {
+    background: rgba(79, 70, 229, 0.05);
+    border: 1px solid rgba(79, 70, 229, 0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    background: rgba(79, 70, 229, 0.1);
+    border-color: rgba(79, 70, 229, 0.4);
+    transform: translateY(-5px);
+}
+
+.category-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #4f46e5;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: #4f46e5;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-info {
+    flex: 1;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: #e4e4e7;
+    margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(79, 70, 229, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+    border-radius: 3px;
+    transition: width 1s ease;
+}
+
+.skill-level {
+    font-size: 0.9rem;
+    color: #a1a1aa;
+}
+
+.additional-skills {
+    background: rgba(79, 70, 229, 0.08);
+    border: 1px solid rgba(79, 70, 229, 0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.additional-skills h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #e4e4e7;
+}
+
+.additional-skills p {
+    color: #a1a1aa;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .skills {
+        padding: 3rem 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-item {
+        gap: 1rem;
+    }
+}

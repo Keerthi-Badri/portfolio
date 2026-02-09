@@ -1,0 +1,31 @@
+.projects {
+    padding: 5rem 2rem;
+    background: rgba(15, 20, 25, 1);
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.projects-footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        padding: 3rem 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
