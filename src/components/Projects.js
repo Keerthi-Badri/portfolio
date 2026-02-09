@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Projects.css';
 import ProjectCard from './ProjectCard';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const Projects = () => {
     // PLACEHOLDER: Replace with your actual projects

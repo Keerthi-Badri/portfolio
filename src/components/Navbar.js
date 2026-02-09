@@ -24,11 +24,11 @@ const Navbar = () => {
                 </div>
 
                 <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
-                    <a className="nav-link" onClick={() => handleNavClick('home')}>Home</a>
-                    <a className="nav-link" onClick={() => handleNavClick('about')}>About</a>
-                    <a className="nav-link" onClick={() => handleNavClick('skills')}>Skills</a>
-                    <a className="nav-link" onClick={() => handleNavClick('projects')}>Projects</a>
-                    <a className="nav-link" onClick={() => handleNavClick('contact')}>Contact</a>
+                    <a className="nav-link" href="#home" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>Home</a>
+                    <a className="nav-link" href="#about" onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}>About</a>
+                    <a className="nav-link" href="#skills" onClick={(e) => { e.preventDefault(); handleNavClick('skills'); }}>Skills</a>
+                    <a className="nav-link" href="#projects" onClick={(e) => { e.preventDefault(); handleNavClick('projects'); }}>Projects</a>
+                    <a className="nav-link" href="#contact" onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}>Contact</a>
                 </div>
 
                 <div className="hamburger" onClick={toggleMenu}>
