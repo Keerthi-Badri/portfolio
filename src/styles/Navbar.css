@@ -1,11 +1,11 @@
 .navbar {
-    background: rgba(15, 20, 25, 0.95);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+    border-bottom: 1px solid var(--border);
 }
 
 .navbar-container {
@@ -20,7 +20,7 @@
 .navbar-logo {
     font-size: 1.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -39,7 +39,7 @@
 }
 
 .nav-link {
-    color: #e4e4e7;
+    color: var(--text);
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -47,7 +47,7 @@
 }
 
 .nav-link:hover {
-    color: #4f46e5;
+    color: var(--accent);
 }
 
 .nav-link::after {
@@ -57,7 +57,7 @@
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
     transition: width 0.3s ease;
 }
 
@@ -65,15 +65,45 @@
     width: 100%;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface-soft);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-1px);
+    background: var(--accent);
+    color: white;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #e4e4e7;
+    color: var(--text);
 }
 
 @media screen and (max-width: 768px) {
+    .nav-actions {
+        gap: 0.5rem;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -83,7 +113,7 @@
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: rgba(15, 20, 25, 0.98);
+        background-color: var(--surface-strong);
         width: 100%;
         text-align: center;
         transition: 0.3s;

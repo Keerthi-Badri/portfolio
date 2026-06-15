@@ -9,43 +9,30 @@ const About = () => {
 
                 <div className="about-content">
                     <div className="about-text">
-                        {/* PLACEHOLDER: Replace with your about information */}
                         <p>
-                            I'm a dedicated developer with a passion for building web applications that solve real-world problems.
-                            With [X] years of experience in [your field], I have successfully delivered numerous projects
-                            that have positively impacted businesses and users.
+                            I am a Computer Science graduate with strong skills in Java, Python, Flask, and MySQL. I enjoy building backend-driven applications and solving real-world problems through code. I have developed projects like a Product Management System and a Smart Exam Portal using database integration and backend logic. I am seeking opportunities as a Software Developer to contribute and grow in a professional environment.
                         </p>
 
-                        <p>
-                            My journey in tech started with [your starting point], and I've continuously evolved my skills
-                            to stay current with industry trends. I believe in writing clean, maintainable code and following
-                            best practices in software development.
-                        </p>
-
-                        <p>
-                            When I'm not coding, you can find me [your hobbies/interests]. I'm always eager to learn new technologies
-                            and collaborate with talented individuals to create amazing products.
-                        </p>
+                       
 
                         <div className="about-stats">
                             <div className="stat">
-                                <h3 className="stat-number">[X]+</h3>
-                                <p className="stat-label">Projects Completed</p>
+                                <h3 className="stat-number">5+</h3>
+                                <p className="stat-label">Tech areas</p>
                             </div>
                             <div className="stat">
-                                <h3 className="stat-number">[X]+</h3>
-                                <p className="stat-label">Years Experience</p>
+                                <h3 className="stat-number">2+</h3>
+                                <p className="stat-label">Full Projects</p>
                             </div>
                             <div className="stat">
-                                <h3 className="stat-number">[X]+</h3>
-                                <p className="stat-label">Happy Clients</p>
+                                <h3 className="stat-number">2026</h3>
+                                <p className="stat-label">Graduation</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="about-image">
-                        {/* PLACEHOLDER: Replace src with your image */}
-                        <img src="https://via.placeholder.com/350" alt="About" className="about-img" />
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Developer workspace" className="about-img" />
                     </div>
                 </div>
             </div>

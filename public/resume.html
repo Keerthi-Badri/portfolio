@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter | Resume</title>
+    <style>
+      :root { color-scheme: dark; --bg:#0f172a; --panel:#111827; --text:#e5eefb; --muted:#cbd5e1; --accent:#818cf8; }
+      * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+      body { margin:0; background: radial-gradient(circle at top, #172554 0%, var(--bg) 45%); color:var(--text); }
+      .page { max-width: 980px; margin: 0 auto; padding: 32px 18px 60px; }
+      .card { background: rgba(17,24,39,0.92); border: 1px solid rgba(129,140,248,0.18); border-radius: 24px; padding: 28px; box-shadow: 0 18px 40px rgba(15,23,42,0.45); }
+      h1 { margin: 0 0 8px; font-size: 2rem; }
+      .role { color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; }
+      p, li { color: var(--muted); line-height: 1.6; }
+      .grid { display:grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+      .pill { display:inline-block; background: rgba(129,140,248,0.12); border:1px solid rgba(129,140,248,0.24); color:#dbe4ff; padding:6px 10px; border-radius:999px; margin:4px 6px 0 0; font-size: .9rem; }
+      .section { margin-top: 22px; }
+      .section h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .16em; color:#dbe4ff; border-bottom:1px solid rgba(129,140,248,0.18); padding-bottom:8px; margin-bottom: 10px; }
+      .job { margin-bottom: 14px; }
+      .job strong { color:#fff; }
+      @media (max-width: 780px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <p class="role">Front-End Developer & UI Engineer</p>
+        <h1>Alex Carter</h1>
+        <p>Creative front-end developer with 4+ years of experience building polished, responsive websites and interfaces for modern brands, startups, and digital products.</p>
+
+        <div class="grid">
+          <div>
+            <div class="section">
+              <h2>Summary</h2>
+              <p>I specialize in React-based interfaces, responsive design, accessibility, and performance-focused user experiences. I turn complex ideas into clear, visually appealing digital products.</p>
+            </div>
+            <div class="section">
+              <h2>Experience</h2>
+              <div class="job"><strong>Senior Front-End Developer</strong> — Creative Studio Co. (2022–Present)<br/>Built SaaS, e-commerce, and portfolio websites; optimized UX, accessibility, and page speed.</div>
+              <div class="job"><strong>Front-End Developer</strong> — NextWave Digital (2020–2022)<br/>Developed reusable components, UI enhancements, and interactive web experiences for client campaigns.</div>
+            </div>
+          </div>
+          <div>
+            <div class="section">
+              <h2>Skills</h2>
+              <span class="pill">React</span><span class="pill">Next.js</span><span class="pill">JavaScript</span><span class="pill">CSS</span><span class="pill">HTML</span><span class="pill">Figma</span><span class="pill">Accessibility</span><span class="pill">Performance</span>
+            </div>
+            <div class="section">
+              <h2>Contact</h2>
+              <p>Email: hello@yourportfolio.dev<br/>Portfolio: https://example.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

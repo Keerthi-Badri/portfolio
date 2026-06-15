@@ -39,52 +39,69 @@
 .skills-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
+/* Skill Card */
 .skill-item {
     display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
+    gap: 1rem;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
 }
 
+.skill-item:hover {
+    background: #f3f4f6;
+}
+
+/* Icon */
 .skill-icon {
-    font-size: 2.5rem;
-    color: #4f46e5;
-    min-width: 50px;
+    font-size: 2rem;
+    color: #2563eb;
+    min-width: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
+/* Info */
 .skill-info {
     flex: 1;
 }
 
+/* Name */
 .skill-name {
     font-weight: 600;
-    color: #e4e4e7;
-    margin-bottom: 0.5rem;
+    color: #111827;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
 }
 
+/* Skill level text */
+.skill-level {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* Progress bar */
 .skill-bar {
     width: 100%;
     height: 6px;
-    background: rgba(79, 70, 229, 0.1);
-    border-radius: 3px;
+    background: #e5e7eb;
+    border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 0.5rem;
+    margin: 6px 0;
 }
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
-    border-radius: 3px;
-    transition: width 1s ease;
-}
-
-.skill-level {
-    font-size: 0.9rem;
-    color: #a1a1aa;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    border-radius: 10px;
+    transition: width 0.8s ease-in-out;
 }
 
 .additional-skills {
@@ -98,7 +115,7 @@
 .additional-skills h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #e4e4e7;
+    color: #2563EB;
 }
 
 .additional-skills p {

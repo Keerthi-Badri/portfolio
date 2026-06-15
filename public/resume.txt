@@ -1,0 +1,22 @@
+NAME: Alex Carter
+ROLE: Front-End Developer & UI Engineer
+
+SUMMARY
+Creative front-end developer with 4+ years of experience building polished, responsive websites and product interfaces for startups and digital brands. Skilled in React, CSS, accessibility, performance optimization, and delivering modern user experiences that feel fast and intuitive.
+
+EXPERIENCE
+Senior Front-End Developer | Creative Studio Co. | 2022–Present
+- Built responsive web experiences for SaaS, e-commerce, and portfolio clients.
+- Improved page performance and accessibility across key product pages.
+- Collaborated with designers and product teams to translate concepts into production-ready interfaces.
+
+Front-End Developer | NextWave Digital | 2020–2022
+- Developed reusable React components and UI systems for client projects.
+- Enhanced user engagement with improved layouts, visuals, and interaction design.
+
+SKILLS
+React, Next.js, JavaScript, CSS, HTML, UI Design, Responsive Design, Accessibility, Performance Optimization, Git, Figma
+
+CONTACT
+Email: hello@yourportfolio.dev
+Portfolio: https://example.com

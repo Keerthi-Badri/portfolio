@@ -8,6 +8,7 @@ const Contact = () => {
         email: '',
         message: ''
     });
+
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false);
 
@@ -23,13 +24,13 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        // PLACEHOLDER: Replace with your actual form submission logic
-        // You can use emailjs, formspree, or any backend API
+        // Placeholder submission logic
         setTimeout(() => {
             console.log('Form submitted:', formData);
             setSubmitted(true);
             setLoading(false);
             setFormData({ name: '', email: '', message: '' });
+
             setTimeout(() => setSubmitted(false), 3000);
         }, 1000);
     };
@@ -37,22 +38,28 @@ const Contact = () => {
     return (
         <section id="contact" className="contact">
             <div className="contact-container">
-                <h2 className="section-title">Get In Touch</h2>
+
+                <h2 className="section-title">Contact Me</h2>
+
                 <p className="section-subtitle">
-                    {/* PLACEHOLDER: Update with your contact message */}
-                    Have a project in mind or want to collaborate? Let's talk!
+                    Feel free to reach out for internships, collaboration, or project opportunities.
+                    I’m always open to discussing software development roles and backend projects.
                 </p>
 
                 <div className="contact-content">
+
+                    {/* Contact Info */}
                     <div className="contact-info">
+
                         <div className="contact-item">
                             <div className="contact-icon">
                                 <FaEnvelope />
                             </div>
                             <div className="contact-details">
                                 <h3>Email</h3>
-                                {/* PLACEHOLDER: Replace with your email */}
-                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                                <a href="mailto:badrikeerthi18@gmail.com">
+                                    badrikeerthi18@gmail.com
+                                </a>
                             </div>
                         </div>
 
@@ -62,8 +69,9 @@ const Contact = () => {
                             </div>
                             <div className="contact-details">
                                 <h3>Phone</h3>
-                                {/* PLACEHOLDER: Replace with your phone number */}
-                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                <a href="tel:+919381055351">
+                                    +91 9381055351
+                                </a>
                             </div>
                         </div>
 
@@ -73,13 +81,15 @@ const Contact = () => {
                             </div>
                             <div className="contact-details">
                                 <h3>Location</h3>
-                                {/* PLACEHOLDER: Replace with your location */}
-                                <p>City, Country</p>
+                                <p>Karimnagar, Telangana, India</p>
                             </div>
                         </div>
+
                     </div>
 
+                    {/* Contact Form */}
                     <form className="contact-form" onSubmit={handleSubmit}>
+
                         <div className="form-group">
                             <input
                                 type="text"
@@ -110,15 +120,25 @@ const Contact = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
-                            ></textarea>
+                            />
                         </div>
 
-                        <button type="submit" className="btn btn-primary" disabled={loading}>
+                        <button
+                            type="submit"
+                            className="btn btn-primary"
+                            disabled={loading}
+                        >
                             {loading ? 'Sending...' : 'Send Message'}
                         </button>
 
-                        {submitted && <p className="success-message">Message sent successfully!</p>}
+                        {submitted && (
+                            <p className="success-message">
+                                Message sent successfully!
+                            </p>
+                        )}
+
                     </form>
+
                 </div>
             </div>
         </section>

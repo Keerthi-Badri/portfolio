@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Navbar.css';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ theme, onToggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -19,8 +19,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    {/* PLACEHOLDER: Replace with your name or logo */}
-                    <span className="logo-text">Your Name</span>
+                    <span className="logo-text">Keerthi Badri</span>
                 </div>
 
                 <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
@@ -31,8 +30,13 @@ const Navbar = () => {
                     <a className="nav-link" href="#contact" onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}>Contact</a>
                 </div>
 
-                <div className="hamburger" onClick={toggleMenu}>
-                    {isOpen ? <FaTimes /> : <FaBars />}
+                <div className="nav-actions">
+                    <button type="button" className="theme-toggle" onClick={onToggleTheme} aria-label="Toggle theme">
+                        {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                    </button>
+                    <div className="hamburger" onClick={toggleMenu}>
+                        {isOpen ? <FaTimes /> : <FaBars />}
+                    </div>
                 </div>
             </div>
         </nav>

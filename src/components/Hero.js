@@ -1,59 +1,67 @@
 import React from 'react';
 import '../styles/Hero.css';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Hero = () => {
+    const scrollToProjects = () => {
+        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <section id="home" className="hero">
             <div className="hero-container">
                 <div className="hero-content">
+                    <p className="eyebrow">Software Developer</p>
                     <h1 className="hero-title">
-                        {/* PLACEHOLDER: Replace 'Your Name' with your actual name */}
-                        Hi, I'm <span className="highlight">Your Name</span>
+                        I’m <span className="highlight">Keerthi Badri</span>,
                     </h1>
 
                     <p className="hero-subtitle">
-                        {/* PLACEHOLDER: Replace with your professional title/role */}
-                        Full Stack Developer | React Specialist | Problem Solver
+                        Software Developer focused on building backend systems, database-driven applications, and full-stack web applications using Java, Python, Flask, and MySQL.
                     </p>
 
                     <p className="hero-description">
-                        {/* PLACEHOLDER: Write a brief description about yourself */}
-                        I am passionate about creating beautiful, functional web applications. 
-                        With expertise in modern web technologies, I help businesses bring their ideas to life.
+                        Computer Science undergraduate with strong foundation in Java, Python, and Database Management Systems. Experienced in building backend-focused web applications using Flask and MySQL. Seeking an entry-level Software Developer role to apply programming and problem-solving skills in real-world applications.
                     </p>
 
+                    <div className="hero-badges">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>JDBC</span>
+                        <span>OOP</span>
+                        <span>REST APIs</span>
+                        <span>Problem Solving</span>
+                    </div>
+
                     <div className="hero-buttons">
-                        <button className="btn btn-primary">
-                            {/* PLACEHOLDER: Link to your resume/CV */}
+                        <a className="btn btn-primary" href="/keerthi.pdf" download>
                             Download Resume
-                        </button>
-                        <button className="btn btn-secondary">
-                            {/* PLACEHOLDER: Scroll to projects section */}
+                        </a>
+                        <a className="btn btn-secondary" href="/keerthi.pdf" target="_blank" rel="noreferrer">
+                            View Resume
+                        </a>
+                        <button className="btn btn-ghost" type="button" onClick={scrollToProjects}>
                             View My Work
                         </button>
                     </div>
 
                     <div className="hero-socials">
-                        {/* PLACEHOLDER: Replace href with your social media links */}
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
                             <FaGithub />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
                             <FaLinkedin />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <FaTwitter />
-                        </a>
-                        <a href="mailto:your.email@example.com" className="social-icon">
+                        <a href="mailto:hello@yourportfolio.dev" className="social-icon" aria-label="Email">
                             <FaEnvelope />
                         </a>
                     </div>
                 </div>
 
                 <div className="hero-image">
-                    {/* PLACEHOLDER: Replace src with your profile image */}
-                    <img src="https://via.placeholder.com/400" alt="Profile" className="profile-img" />
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Creative developer desk" className="profile-img" />
                 </div>
             </div>
         </section>
